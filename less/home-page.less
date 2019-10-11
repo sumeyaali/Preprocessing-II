@@ -1,24 +1,69 @@
 .home {
 
+  header {
+    @media @mobile {
+      width:95%;
+      margin-left:8%;
+      padding-right: 10%;
+    }
+  }
+
+
+
+    hr {
+    border:none;
+    border-top:2px dashed silver;
+    margin: 0;
+    }
+
+    .dash {
+      width:120%;
+      margin-right:60%;
+      margin-left: -10%;
+    }
+    
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+    }
+
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width:82%;
+        margin-left:42px;
+        justify-content: center;
+        align-items: center;
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      // border:1px solid blue;
+
+      @media @mobile {
+        width:100%;
+      }
 
       img {
         border-radius: 10px;
+        // border: 1px solid red;
+        
+        @media @mobile {
+          margin-left:40px;
+        }
       }
     }
   }
@@ -27,20 +72,39 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile {
+      display: flex;
+      flex-direction: column-reverse;
+      // border: 1px solid orange;
+    }
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      
+      @media @mobile {
+        width:82%;
+        justify-content: center;
+        align-items: center;
+      }
     }
-
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+
+      @media @mobile {
+        width:100%;
+      }
     }
   }
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media @mobile {
+      margin:40px;
+    }
 
     img {
       border-radius: 10px;
@@ -53,9 +117,28 @@
     display: flex;
     justify-content: space-between;
 
+    .holiday { 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @media @mobile {
+        display: flex;
+        flex-direction: column;
+      }
+
+    }
+    
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width:60%;
+      }
     }
   }
 }// home
+
+
+

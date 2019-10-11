@@ -1,1 +1,38 @@
 // Mixins in here
+
+.btn(@bg-color, @width, @txt-color){
+    display: flex;
+    background-color: @bg-color;
+    cursor: pointer;
+    width: @width;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color:@txt-color;
+
+}
+
+    .btn {
+        .btn(teal, 150px, white );
+        justify-content: center;
+        align-items: center;
+
+        @media @mobile {
+            width:100%;
+            margin-right:20%;
+            
+        }
+    }
+    
+
+
+
+    
+    
+    
+
+      
+    
+    
+    
+    
